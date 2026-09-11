@@ -1,6 +1,6 @@
 from app.video.video_reader import VideoReader
 
-VIDEO_PATH = "data/videos/test.mp4"
+VIDEO_PATH = "data/videos/test.webm"
 
 def main():
     print("Starting TitanTrace...")
