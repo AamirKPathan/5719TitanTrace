@@ -9,6 +9,11 @@ class VideoReader:
             raise FileNotFoundError(
                 f"Video not found: {self.video_path}"
             )
+        self.cap = cv2.VideoCapture(str(self.video_path))
+        if not self.cap.isOpened():
+            raise RuntimeError(
+                f"Failed to open video: {self.video_path}"
+            )
         self.fps = self.cap.get(cv2.CAP_PROP_FPS)
         self.frame_count = int(
             self.cap.get(cv2.CAP_PROP_FRAME_COUNT)
