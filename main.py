@@ -1,4 +1,5 @@
 from app.video.video_reader import VideoReader
+from app.video.frame_extractor import FrameExtractor
 
 VIDEO_PATH = "data/videos/test.webm"
 FRAME_OUTPUT_DIR = "data/frames"
