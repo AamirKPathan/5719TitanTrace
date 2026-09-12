@@ -1,4 +1,4 @@
-import cv2from
+import cv2
 from pathlib import Path
 
 class FrameExtractor:
