@@ -35,11 +35,11 @@ for t in times:
     images.append(image)
 video.release()
 
-sheet = Image.new("RGB", (960, 2160), "black")
+sheet = Image.new("RGB", (960, 3240), "black")
 
 for i, image in enumerate(images):
     x = (i % 2) * 480
-    y = (i // 2) * 180
+    y = (i // 2) * 270
 
     sheet.paste(image, (x, y))
 
